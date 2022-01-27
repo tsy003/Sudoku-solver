@@ -14,7 +14,7 @@ def _solve_steps(map, update_step, steps, level):
     #   1: Solved
     #   2: Given number of steps done (frame_step)
 
-    print("level: %d, steps: %d" % (level, steps))
+    #print("level: %d, steps: %d" % (level, steps))
 
     if level >= 81:
         # Solved
@@ -23,7 +23,6 @@ def _solve_steps(map, update_step, steps, level):
         # The number of specified steps has been done,
         # return out of the solve recursion loop
         # such that the graphics can be updated for the user.
-        print("steps done")
         return 2
 
     # Calculate x and y from recursion level.
